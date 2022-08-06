@@ -15,7 +15,7 @@ class TradingData:
     def __init__(self, user):
         self.user = user
         self.user_data = json.load( open( "data.json" ) )
-        self.curr_time = datetime.now()    
+        self.curr_time = datetime.now()
          
     def get_array_user_positions(self):
         pos_list = []
