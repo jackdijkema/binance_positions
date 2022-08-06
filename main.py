@@ -7,7 +7,7 @@ from TradingData import TradingData
 from Api import Api
 telegram = "5463256842:AAFQoDtCiERemmXGJmzrskjG1JtJV-UyRSg"
 
-user = '我是秒哥'
+user = '0xKyd'
 
 def main():    
     td = TradingData(user)
