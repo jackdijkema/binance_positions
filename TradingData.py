@@ -1,14 +1,17 @@
-import threading
+#!/usr/bin/env python3
 import requests
 import json
 import telegram_send
+import logging
 from datetime import *
+import time
+
 
 class TradingData:
     
-    def __init__(self, user, user_data):
+    def __init__(self, user):
         self.user = user
-        self.user_data = user_data
+        self.user_data = json.load( open( "data.json" ) )
          
     def get_array_user_positions(self):
         pos_list = []
@@ -16,6 +19,13 @@ class TradingData:
             if i['nickName'] == self.user:
                 pos_list.append(i)    
         return pos_list
+    
+    def update_positions(self):
+        logging.info("Position Thread %s: starting")
+        while True:
+            print("Updating positions...")
+            self.add_to_doc()
+            time.sleep(60)
 
     # def parse_user_data(self, user_data):
     #     time_in_millis = user_data['createTimeStamp'] / 1000
@@ -80,6 +90,6 @@ class TradingData:
                         print("leverage:", lev,'x', file=f)
                         print("---------------------------------", file=f)
                         
-                        # message = "TradeID: {}  \n Position: {} \n Entry Time: {} \n Entry Price: {} \n Current Price: {} \n Size: {} \n PNL: {} \n Leverage: {}".format(id, sym, entry_time, entry_price, current_price, size, pnl, lev)
-                        # telegram_send.send(messages=[message])
+                        message = "TradeID: {}  \n Position: {} \n Entry Time: {} \n Entry Price: {} \n Current Price: {} \n Size: {} \n PNL: {} \n Leverage: {}".format(id, sym, entry_time, entry_price, current_price, size, pnl, lev)
+                        telegram_send.send(messages=[message])
             
