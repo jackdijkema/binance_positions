@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import requests
 import json
-
+from datetime import *
 import logging
 import threading
 import time
@@ -22,5 +22,5 @@ class Api:
         while True:
             req = self.api_req()
             self.api_resp_to_doc(req)
-            print("Updated data.txt", "Status Code:", req.status_code)
+            print("Updated data.txt", "Status Code:", req.status_code, "Update Time:", datetime.utcnow())
             time.sleep(5)
