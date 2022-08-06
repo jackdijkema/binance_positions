@@ -22,5 +22,5 @@ class Api:
         while True:
             req = self.api_req()
             self.api_resp_to_doc(req)
-            print("Updated data.txt", "Status Code:",req.status_code)
+            print("Updated data.txt", "Status Code:", req.status_code)
             time.sleep(5)
