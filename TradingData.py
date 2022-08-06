@@ -17,13 +17,17 @@ class TradingData:
         pos_list = []
         for i in self.user_data:
             if i['nickName'] == self.user:
-                pos_list.append(i)    
+                pos_list.append(i)
+            else:
+                print("Waiting for position...")
+                time.sleep(3)
+                self.get_array_user_positions()
         return pos_list
     
     def update_positions(self):
         logging.info("Position Thread %s: starting")
         while True:
-            print("Updating positions...")
+            print("Updating positions...", "Update Time:",datetime.now())
             self.add_to_doc()
             time.sleep(60)
 
@@ -92,4 +96,5 @@ class TradingData:
                         
                         message = "TradeID: {}  \n Position: {} \n Entry Time: {} \n Entry Price: {} \n Current Price: {} \n Size: {} \n PNL: {} \n Leverage: {}".format(id, sym, entry_time, entry_price, current_price, size, pnl, lev)
                         telegram_send.send(messages=[message])
+            telegram_send.send(messages=["-END-"])
             
