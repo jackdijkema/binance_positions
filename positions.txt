@@ -1,0 +1,84 @@
+---------------------------------
+User: UNCLEBFM
+Current Time: 2022-08-06 12:34:03.800371
+---------------------------------
+TRADE ID: -855872591
+Position: ETHUSDT_220930
+Entry Time: 2022-08-06 10:56:09.352000
+Entry Price: 1709.63
+Current Price: 1715.43
+Size: -19.14
+PNL: -111.04779333
+Trade closed?: True
+leverage: 15 x
+---------------------------------
+TRADE ID: 728551040
+Position: ETHUSDT
+Entry Time: 2022-08-06 11:00:00.318000
+Entry Price: 1711.57
+Current Price: 1718.51
+Size: -43.665
+PNL: -302.91890175
+Trade closed?: False
+leverage: 43 x
+---------------------------------
+TRADE ID: 1171450275
+Position: BTCUSDT
+Entry Time: 2022-08-06 10:58:20.841000
+Entry Price: 23150.0
+Current Price: 23190.99
+Size: -0.702
+PNL: -28.77654417
+Trade closed?: False
+leverage: 63 x
+---------------------------------
+TRADE ID: -1475968288
+Position: OPUSDT
+Entry Time: 2022-08-06 10:56:44.618000
+Entry Price: 1.9133166
+Current Price: 1.9397433
+Size: -3654.6
+PNL: -96.57890818
+Trade closed?: False
+leverage: 8 x
+---------------------------------
+TRADE ID: -987809985
+Position: ETHUSDT_220930
+Entry Time: 2022-08-06 10:05:19.323000
+Entry Price: 1720.29
+Current Price: 1711.45
+Size: 13.722
+PNL: -121.33850903
+Trade closed?: True
+leverage: 25 x
+---------------------------------
+TRADE ID: 244278637
+Position: BTCUSDT_220930
+Entry Time: 2022-08-06 09:21:50.864000
+Entry Price: 23343.3
+Current Price: 23376.1
+Size: 0.664
+PNL: 21.81045202
+Trade closed?: True
+leverage: 25 x
+---------------------------------
+TRADE ID: 582075545
+Position: ETHUSDT
+Entry Time: 2022-08-06 09:19:51.443000
+Entry Price: 1722.19
+Current Price: 1721.52
+Size: 24.904
+PNL: -16.70318228
+Trade closed?: True
+leverage: 49 x
+---------------------------------
+TRADE ID: 1045090773
+Position: BTCUSDT
+Entry Time: 2022-08-06 09:21:23.581000
+Entry Price: 23180.76
+Current Price: 23212.09
+Size: 1.234
+PNL: 38.66587665
+Trade closed?: True
+leverage: 94 x
+---------------------------------
