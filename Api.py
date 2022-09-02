@@ -3,7 +3,6 @@ import requests
 import json
 from datetime import *
 import logging
-import threading
 import time
 
 class Api:

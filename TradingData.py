@@ -52,13 +52,14 @@ class TradingData:
                     time_in_millis = pos['createTimeStamp']
                     dt = datetime.utcfromtimestamp(time_in_millis / 1000)
                     entry_time = dt
-                    # print(sym,"Time Check:", dt, self.curr_time)
                     
                     if dt > self.curr_time:
                         print("Confirmed:", dt, self.curr_time)
                         
                         telegram_send.send(messages=["NEW POSITION"])
-                        message = "TradeID: {}  \n Position: {} \n Entry Time: {} \n BOT Time: {} \n Entry Price: {} \n Current Price: {} \n Size: {} \n PNL: {} \n Leverage: {}".format(id, sym, entry_time, curr_time, entry_price, current_price, size, pnl, lev)
+                        message = "TradeID: {}  \n Position: {} \n Entry Time: {} \n BOT Time: {} \n Entry Price: {} \n Current Price: {} \n Size: {} \n PNL: {} \n Leverage: {}".format(
+                            id, sym, entry_time, curr_time, entry_price, current_price, size, pnl, lev)
+
                         telegram_send.send(messages=[message])
                         
                         print("TRADE ID:", id, file=f)
