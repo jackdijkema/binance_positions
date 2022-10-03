@@ -5,11 +5,12 @@ import json
 from multiprocessing import *
 from TradingData import TradingData
 from Api import Api
-telegram = "5463256842:AAFQoDtCiERemmXGJmzrskjG1JtJV-UyRSg"
 
-user = 'TreeOfAlpha1'
 
 def main():    
+    user = input('Fill in Binance username 2 follow: ')
+    print("Starting bot on user: ", user)
+
     td = TradingData(user)
     api = Api()
     try:
