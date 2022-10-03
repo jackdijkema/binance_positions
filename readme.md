@@ -4,3 +4,5 @@ made this in couple hours not 2 serious.
 
 - check telegram_send docs 2 setup for ur own telegram.
 - only shares opened position, not when they're closed.
+
+was mostly for fun
