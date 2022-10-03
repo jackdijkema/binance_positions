@@ -2,10 +2,8 @@
 import multiprocessing
 import requests
 import json
-from multiprocessing import *
 from TradingData import TradingData
 from Api import Api
-
 
 def main():    
     user = input('Fill in Binance username 2 follow: ')

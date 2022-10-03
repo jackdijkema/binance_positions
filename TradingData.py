@@ -1,14 +1,11 @@
-
 #!/usr/bin/env python3
 from itertools import count
 from operator import pos
-import requests
 import json
 import telegram_send
 import logging
 from datetime import *
 import time
-
 
 class TradingData:
     
